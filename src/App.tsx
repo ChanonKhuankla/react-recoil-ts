@@ -1,16 +1,20 @@
-import React, { Suspense } from 'react';
-import { Loading } from './pages';
-import Router from './router';
-import { RecoilRoot } from 'recoil';
+import React, { Suspense } from 'react'
+import { Loading } from './pages'
+// import Router from './router'
+import Auth from './components/auth'
+import { RecoilRoot } from 'recoil'
+import { BrowserRouter } from 'react-router-dom'
 
 const App = (): JSX.Element => {
     return (
         <RecoilRoot>
             <Suspense fallback={<Loading />}>
-                <Router />
+                <BrowserRouter>
+                    <Auth />
+                </BrowserRouter>
             </Suspense>
         </RecoilRoot>
-    );
-};
+    )
+}
 
-export default App;
+export default App

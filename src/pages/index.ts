@@ -1,4 +1,4 @@
-import Loading from './loading';
-import Dashboard from './dashboard';
+import Loading from './loading'
+import Dashboard from './dashboard'
 
-export { Loading, Dashboard };
+export { Loading, Dashboard }

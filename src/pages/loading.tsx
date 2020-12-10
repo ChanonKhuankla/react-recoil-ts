@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
 
 const Loading = (): JSX.Element => {
     useEffect(() => {
-        console.log('Loadding ..');
-    }, []);
+        console.log('Loadding ..')
+    }, [])
 
-    return <h1>Loadding....</h1>;
-};
+    return <h1>Loadding....</h1>
+}
 
-export default Loading;
+export default Loading
